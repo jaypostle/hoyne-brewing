@@ -1,0 +1,77 @@
+
+// Type
+
+body {
+    font-family: 'Graphik-Regular', 'Outfit', 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: rgb(23, 23, 22);
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, nav a {
+    font-family: 'Graphic-Regular', 'Barlow', 'Sarabun', sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FEC10D;
+    text-transform: uppercase;
+    font-family: Rozha;
+    font-size: 4.25rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    line-height: 3.25rem;
+    text-align: center;
+
+    @include mq($desktop){
+        font-size: 3rem;
+
+    }
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 0.5rem 0rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include mq($desktop){
+        font-size: 2.625rem;
+
+    }
+}
+
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: rgba($textColor-midnight-blue, 70%);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    // color: $textColor-midnight-blue;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0.75rem 0rem;
+    // margin-bottom: 2rem;
+    -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    // new styles
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease 0s;
+    
+}
+
+

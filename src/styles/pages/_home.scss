@@ -1,0 +1,248 @@
+// *** HERO SECTION *** //
+.home-hero-section {
+    // delete this margin when i want it to be top of the screen
+    // margin-top: 2rem;
+    position: relative;
+    
+    // height: 100vh;
+
+    .background-blur {
+        content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15));
+            z-index: 1;
+    }
+
+    .hoyne-logo {
+        width: 12.5rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    background-color: #fff;
+    color: white;
+    .home-inner-wrapper {
+        background-color: hsla(222, 39%, 6%, 0.95);
+        // padding: 7.5rem 1rem 7.8%;
+        padding: 3rem 2rem 7.8%;
+        display: flex;
+        flex-flow: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+        // clip-path: polygon(0px 0%, 100% 0%, 100% calc(92.2% + 2rem), 0px 100%);
+        overflow: hidden;
+
+        @include mq($tabletWide) {
+            padding: 9rem 2rem 7.8%;
+        }
+
+        .content-container {
+            // position: relative;
+            
+        }
+
+        h1 {
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: -4rem;
+
+            @include mq($tabletWide) {
+                max-width: 35rem;
+                font-size: 6rem;
+                letter-spacing: -1px;
+                font-weight: 700;
+                line-height: 4.75rem;
+            }
+        }
+
+        .bottle-transition-div {
+            width: 15rem;
+            height: auto;
+            margin: 0 auto;
+
+            @include mq($tabletWide) {
+                width: 17.5rem;
+            }
+        } 
+
+    }
+
+.background-hero {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    // transform: translateY(10.1946%);
+    
+    .image-wrapper {
+
+        figure {
+                width: 125%;
+                // transform: translateX(-15%);
+                transform: translate(-17.5%, 35%);
+                overflow: hidden;
+                // position: absolute;
+                // top: 0px;
+                // left: 0px;
+
+        // &:before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     top: 0px;
+        //     left: 0px;
+        //     width: 125%;
+        //     height: 125%;
+        //     // background: radial-gradient(rgba(255, 255, 255, 0.17), rgba(0, 0, 0, 0.15));
+        //     z-index: 1;
+        // }
+
+        @include mq($tabletWide) {
+            transform: translate(-17.5%, 15%);
+        }
+    }
+    }
+    .noise {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/images/art-vectors/noise-77874a6b87779a8a8ddbb5ec50cc2c67.png) center center repeat;
+        z-index: 0;
+        will-change: opacity;
+    }
+}
+    
+    // this brings visible content above the noise background but allows noise to be above the background colour of the section
+    .visible-content {
+        z-index: 100;
+
+        p {
+            margin-top: 6rem;
+
+            @include mq($tabletWide) {
+                width: 80%;
+                margin: 6rem auto;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .hero-wrapper-background-too {
+        position: relative;
+    }
+
+}
+// End of home hero section
+
+
+
+// *** Our Beer Section *** //
+
+// .curved-edge-section {
+//     position: relative;
+//     margin-bottom: 10rem;
+
+//     .curved-edge {
+//         width: 100%;
+//         height: 50rem;
+//         background: url(../../assets/images/art-vectors/cutout-vector.svg);
+//         top: 0;
+//         overflow: hidden;
+//         position: absolute;
+//         z-index: 999;
+//     }
+// }
+
+.our-beer-section {
+    position: relative;
+    margin-top: 8rem;
+
+    
+
+    @include mq($tabletWide) {
+        margin-top: 15rem;
+    }
+
+    .columns {
+        // position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 63rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include mq($tabletWide) {
+            flex-flow: row;
+            // margin-top: 4rem;
+        }
+
+        .column {
+            flex: 1 1 100%;
+        }
+        
+    }
+
+        // position: relative;
+
+        figure.image-wrapper {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+        }
+      
+    
+    .our-beer-wrapper {
+        padding: 1rem 2rem;
+
+        @include mq($tabletWide) {
+
+            padding-left: 0rem;
+
+            &::before {
+                font-size: 4.5rem;
+                margin-top: 1.5em;
+                padding-top: 2rem;
+                content: "";
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+.homeTank {
+    // position: absolute;
+    // top: 35%;
+    // right: 25%;
+    // left: 25%;
+    width: 12.5rem;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    opacity: 1;
+    z-index: 999;
+
+    @include mq($tabletWide) {
+        width: 15em;
+    }
+    
+}
+
+// @include mq($tabletWide) {

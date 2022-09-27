@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Sarabun:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Rozha';
+    src: local('RozhaOne'), url(../assets/fonts/RozhaOne-Regular.ttf) format('tff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+@font-face {
+    font-family: 'Graphik-Light';
+    src: local('Graphic-Light'), url(../assets/fonts/graphik/GraphikLight.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Graphik-Medium';
+    src: local('Graphic-Medium'), url(../assets/fonts/graphik/GraphikMedium.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: local('Graphic-Regular'), url(../assets/fonts/graphik/GraphikRegular.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Graphik-Black';
+    src: local('Graphic-Black'), url(../assets/fonts/graphik/GraphikBlack.otf) format('otf');
+}
+
+// Normalize
+@import './normalize-fwd';
+
+
+// Utilities
+// @import './functions';
+@import './variables';
+@import './mixins';
+
+// Type
+@import './type';
+@import './unique';
+
+// Site Styles
+@import './site';
+
+// Pages
+@import './pages/home.scss';
+
+// Sections
+@import './sections/footer';
+@import './sections/latestNews';
+@import './sections/philosophy';
+
+// Components
+@import './components/banner-text';
+@import './components/button';
+@import './components/news-card';
+@import './components/newsletter-signUp';
+@import './components/header';

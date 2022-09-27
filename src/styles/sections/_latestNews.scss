@@ -1,0 +1,174 @@
+.latest-news-section {
+    margin-top: 4rem;
+
+    padding: 2rem;
+
+    .section-title-latest-news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        border-top: 1px solid black;
+        margin-bottom: 2rem;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
+
+        article {
+            width: 100%;
+            height: auto;
+            // grid-column: 1 / 7;
+            grid-column-end: span 6;
+
+            @include mq($tabletWide) {
+                grid-column-end: span 2;
+            }
+            
+
+            figure {
+                margin: 0;
+                position: relative;
+
+                .highlight-news-title {
+                    position: absolute;
+                    top: 0px;
+                    right: 12rem;
+                    width: 40%;
+                    font-family: Rozha;
+                    font-size: 3.75rem;
+                    letter-spacing: 0.0125;
+                    font-weight: 700;
+                    line-height: 3rem;
+                    z-index: 90;
+                    line-height: 0.875;
+                    text-transform: uppercase;
+
+                }
+                
+                .image-wrapper:after {
+                    width: 80%;
+                    position: absolute;
+                    top: 0px;
+                    height: 90%;
+                    left: 0%;
+                    right: auto;
+                    width: 80%;
+                    display: block;
+                    content: "";
+                    z-index: 0;
+                    background: linear-gradient(to left, rgba(242, 240, 234, 0.75), rgba(242, 240, 234, 0));
+                    border-radius: 1rem;    
+                }
+
+
+                // .background:after {
+                //     position: absolute;
+                //     top: 0px;
+                //     height: 100%;
+                //     right: 0%;
+                //     left: auto;
+                //     width: 80%;
+                //     display: block;
+                //     content: "";
+                //     z-index: 2;
+                //     background: linear-gradient(to left, rgba(242, 240, 234, 0.75), rgba(242, 240, 234, 0));
+                // }
+                    img {
+                        width: 80%;
+                        border-radius: 1rem 1rem 0 1rem;
+
+                    }
+            }
+        }
+
+        .news-highlight-post {
+            grid-column: 1 / 7;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 1.5rem;
+            grid-template-rows: auto auto 2rem;
+            @include mq($tabletWide) {
+
+            }
+        }
+
+        
+
+    }
+
+.news-wrapper {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // gap: 1rem;
+    // flex-shrink: 1;
+
+    @include mq($desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .news-card {
+
+        span.link {
+            width: calc(100% + 3rem);
+        }
+
+        &:hover {
+            // background-color: rgb(60, 60, 60);;
+            
+            // border: 2px solid #FBC638;
+            .arrowCircle {
+                // color: hsl(44, 96%, 50%);
+    
+    
+                svg {
+                    font-size: 2rem;
+                }
+    
+            }
+    
+            .link-text {
+             
+                // margin-right: 4rem;
+        
+            }
+    
+            span.line {
+                width: 6rem;
+                transition: 0.25s;
+
+    
+            }
+        }
+
+
+        &:nth-of-type(3) {
+            display: none;
+
+            @include mq($desktop) {
+                display: block;
+
+            }
+        }
+    }
+
+    
+}   
+    .latest-news-figure {
+        position: relative;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        grid-area: 1 / 1 / 4 / 7;
+        .news-card {
+            width: 60%;
+            position: absolute;
+            bottom: 2rem;
+            right: 0px;
+        }
+    }
+
+
+}

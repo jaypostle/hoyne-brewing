@@ -1,0 +1,79 @@
+.newsletter-form {
+
+    input[type=text] {
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        color: rgb(23, 23, 22);
+        display: block;
+        resize: none;
+        outline: 0px;
+        // width: 40%;
+        height: 3rem;
+        border-width: 0px 0px 0.125rem;
+        border-top-style: initial;
+        border-right-style: initial;
+        border-left-style: initial;
+        border-top-color: initial;
+        border-right-color: initial;
+        border-left-color: initial;
+        border-image: initial;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(242, 240, 234);
+        appearance: none;
+        border-radius: 0px;
+        transition: border-color 0.4s ease-in-out 0s;
+        // 
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: none;
+        color: rgb(242, 240, 234);
+        font-size: 1.5rem;
+    }
+
+    .form-element-wrapper {
+        display: flex;
+        // flex-direction: row;
+        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+
+        input[type=text] {
+            flex-grow: 3;
+        }
+
+        button[type=submit] {
+            margin-right: 2rem;
+
+            // margin-left: 2rem;
+            width: 7.5rem;
+            font-size: 1.125rem;
+            position: relative;
+            cursor: pointer;
+            display: inline-flex;
+            flex-flow: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 0px 1rem;
+            height: 3rem;
+            color: rgb(242, 240, 234);
+            background-color: rgba(255, 255, 255, 0.08);
+            border: none;
+            border-radius: 0.5rem;
+            line-height: 1;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s linear 0s, border-color 0.3s linear 0s, color 0.3s ease 0s;
+            margin-top: 1.5rem;
+
+            @include mq($tablet) {
+                margin-left: 2rem;
+                margin-top: 0rem;
+            }
+        }
+    }
+}

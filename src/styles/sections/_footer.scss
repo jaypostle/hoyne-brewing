@@ -1,0 +1,113 @@
+footer.Footer {
+
+    background-color: rgb(31, 31, 31);
+    color: rgb(242, 240, 234);
+    width: 100%;
+    // left: 0px;
+    // z-index: 0;
+    // position: relative;
+    padding: 7.5rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+
+    .footer-nav__columns {
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    
+    ul {
+        list-style-type: none;
+        margin-left: 0px;
+        flex: 0 1 auto;
+        margin-bottom: 1rem;
+        margin-right: 3rem;
+        margin-top: 0rem;
+        padding-inline-start: 0px;
+
+        li {
+          
+        }
+        a {
+            color: #f2f0ea;
+            font-size: 1.25rem;
+            font-family: 'Graphik-Regular';
+            font-weight: 500;
+        }
+    }
+    .footer-nav-menu {
+        flex: 0 1 23em;
+        
+        
+
+        li {
+            margin: 0 0;
+            opacity: 0.6;
+        }   
+    }
+
+    h3 {
+        margin: 0px;
+        font-family: 'Graphik-Black';
+        font-size: 1.375rem;
+    }
+}
+
+.footer-nav-social {
+
+    margin-top: 3rem;
+    color: white;
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin-right: 1rem;
+        }
+    }
+
+    svg {
+        font-size: 1.5rem;
+        // color: white!important;
+        
+    }
+   
+}
+
+.beerArtWrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8rem;
+
+
+    > div {
+        width: 300%;
+        flex-flow: row;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        display: block !important;
+    }
+}
+.beerArtBanner {
+    width: 100%;
+    height: 4rem;
+    background: url(../../assets/images/art-vectors/misc-product-illustration-scroll-01.png) center top / auto calc(100% + 1rem) repeat-x;
+}
+
+.copyright-text {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    opacity: 0.6;
+    margin-top: 4rem;
+}

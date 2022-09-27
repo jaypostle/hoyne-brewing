@@ -1,0 +1,62 @@
+.App-header {
+    position: relative;
+}
+
+#main-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+
+
+    #header-nav-burger {
+        font-size: 2rem;
+        color: white;
+        border: none;
+        background-color: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+
+        display: none;
+
+        @include mq(1200px) {
+            display: block;
+        }
+        ul {
+            padding: 0px;
+            display: flex;
+            padding-inline-start: 0px;
+            margin: 0px;
+            margin-right: 2rem;
+
+            li {
+                list-style-type: none;
+                padding: 1rem;
+                
+                a {
+                    // font-weight: 900;
+                    text-transform: none;
+                    color: rgb(242, 240, 234);
+                    transition: border 100ms linear 0s;
+                    font-size: 1.25rem;
+                    font-family: 'Graphik-Black';
+                    border-bottom: 2px solid rgba(#000000, 0);
+                    border-radius: 2px;
+
+                    &:hover {
+                        border-bottom: 2px solid rgb(242, 240, 234);
+                    }
+                }
+
+            }
+        }
+    }
+}
